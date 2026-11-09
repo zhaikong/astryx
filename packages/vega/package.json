@@ -2,7 +2,7 @@
   "name": "@astryxdesign/vega",
   "version": "0.1.3",
   "private": true,
-  "description": "Astryx Vega wrapper — chart and data visualization components. Published to npm only under the @canary dist-tag for early testing; never released as a stable (latest) version.",
+  "description": "Astryx Vega wrapper \u2014 chart and data visualization components. Published to npm only under the @canary dist-tag for early testing; never released as a stable (latest) version.",
   "author": "Meta Open Source",
   "license": "MIT",
   "homepage": "https://github.com/meta/astryx#readme",
@@ -23,7 +23,7 @@
   ],
   "astryx": {
     "canaryOnly": true,
-    "_comment": "Published ONLY to the @canary dist-tag (see .github/workflows/release.yml). Never released as a stable `latest` release. `private: true` is intentional and must stay — it is npm's hard guarantee against an accidental stable publish."
+    "_comment": "Published ONLY to the @canary dist-tag (see .github/workflows/release.yml). Never released as a stable `latest` release. `private: true` is intentional and must stay \u2014 it is npm's hard guarantee against an accidental stable publish."
   },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -43,8 +43,8 @@
     "README.md"
   ],
   "scripts": {
-    "build": "tsup && tsc --project tsconfig.json --emitDeclarationOnly --declaration --noEmit false --outDir dist",
-    "dev": "tsup --watch",
+    "build": "node init && tsup && tsc --project tsconfig.json --emitDeclarationOnly --declaration --noEmit false --outDir dist",
+    "dev": "node init && tsup --watch",
     "test": "vitest run --root ../..",
     "test:watch": "vitest --root ../..",
     "typecheck:docs": "tsc --project tsconfig.docs.json",
