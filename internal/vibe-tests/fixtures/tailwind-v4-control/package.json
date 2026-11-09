@@ -9,9 +9,9 @@
     "node": ">=24 <25"
   },
   "scripts": {
-    "dev": "vite",
+    "dev": "node init && vite",
     "typecheck": "tsc --noEmit",
-    "build": "tsc --noEmit && vite build",
+    "build": "node init && tsc --noEmit && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
